@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Rohit Mishra</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">COVID Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">COVID-19 INDIA</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">You may Delay but Time will Not. <br>A helping hand in the crisis plagued country with 32+ Million Cases and 428k+ Deaths</h2>
+                        <a class="btn btn-primary" href="#projects">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">COVID-19 Support</h2>
+                        <p class="text-white-50">
+                            While there is an information overload by well-meaning citizens all over the internet, the biggest problem patients and caregivers are facing today is the lack of authentic, validated resources to help them get through Covid
+                         <!--   <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>-->
+                            Through this platform, I intend to offer a segregated search for resources in need such as Oxygen support, ICU Beds and more.
+                            <br><a href="https://twitter.com/intent/tweet?button_hashtag=covid19&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #covid19</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/ipad-1.jpg" alt="..." />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-8">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-5">
+                        
+                        <p class="text-black-100 mb-0" style="text-align: center;background-color:#64a19d;font-size: x-large;color: #fff;">COVID RESOURCES</p>
+                        <br>
+                        <p class="text-black-50 mb-0">Fill the form fields to search for resources in your city of choice.</p>
+                        <br>
+                                                
+                        <form id="loginForm" method="POST" action = "feed.php">
+                            <p>
+                                 <label for="Category" class="fcf-label" style="color:rgb(31, 116, 201);">Select Resources Category</label>
+                                 <br>
+                              <select id="Resource" type="text" name="Resource" placeholder="--Select the Category--" style="width: 300px;color:darkgray; border-radius:5px; border-color: olive; border-style:solid;">
+                                 <option value="Bed or Beds or ICU Beds">--Select the Category--</option>
+                                 <option value="Bed or Beds or ICU Beds">Beds</option>
+                              <option value="Oxygen+Cylinder">Oxygen Cylinder</option>
+                              <option value="Plasma">Plasma</option>
+                              <option value="Ambulance">Ambulance</option>
+                             </select>
+                           </p>
+                           
+                           <p>
+                             <label for="City" class="fcf-label" style="color: rgb(31, 116, 201);">Search Metro Cities</label>
+                             <br>
+                              <select id="Metro" type="text" name="Metro" placeholder="--Select the City--" style="width: 300px; color:darkgray; border-radius:5px; border-color: olive; border-style:solid;">
+                                 <option value="Delhi">--Select the City--</option>
+                                 <option value="Delhi">Delhi</option>
+                                 <option value="Mumbai">Mumbai</option>
+                                 <option value="Chennai">Chennai</option>
+                                 <option value="Kolkata">Kolkata</option>
+                             </select>
+                            </p>
+                            
+                                <p>
+                                    <label for="Tweets" class="fcf-label" style="color: rgb(31, 116, 201);">Select Tweet Type</label>
+                                    <br>
+                                     <select id="Tweet" type="text" name="Tweet" placeholder="----" style="width: 300px; color:darkgray; border-radius:5px; border-color: olive; border-style:solid;">
+                                        <option value="Verified">--Type--</option>
+                                        <option value="Verified">Verified</option>
+                                        <option value="Available">Available</option>
+                                       
+                                    </select>
+                                   </p>
+                                       <br>
+                            <p>  
+                            <button id="st" name="login" type="submit" style="color: #fff; background-color: #64a19d; display: inline-block;box-shadow: olivedrab;" >Search</button>
+                                <br>
+                             </p>         
+                                <!--- <button id="st" name="login" type="submit" onclick="location.href='https://twitter.com/search?q=%20delhi%20(bed%20OR%20beds)%20-%22needed%22%20-%22required%22%20-%22need%22%20-%22requirement%22&f=live'";>Send</button>
+                              -->
+                         </form>
+                           
+                        <!--<img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-1.jpg" alt="..." />-->
+                       
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            
+                            <p class="text-black-50 mb-0" style="text-align: center;background-color:#64a19d; font-size: x-large; color: #fff;">Guidelines & News</p>
+                            <br>
+                            <a class="twitter-timeline" data-width="390" data-height="400" data-theme="dark" href="https://twitter.com/CDCgov?ref_src=twsrc%5Etfw">Tweets by CDCgov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+           
+               
+                           
+                              
+                   
+                
+                <!--<div class="fcf-form-group">
+                      
+                       <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" onclick="window.location='twitter.php';">Send</button>
+                                                 
+                </div> 
+            </div> 
+        </form>  -->             
+                <!-- Project One Row ||  //method="post" action="C:\xampp\htdocs\test1\twitter.php"
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Misty</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                        <form class="form-signup d-flex flex-column flex-sm-row">
+                            <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-8 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-65">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Pin</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">New York City, USA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-65">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">rohitvmishra03@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-65">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+1 (412) 801-3559</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
